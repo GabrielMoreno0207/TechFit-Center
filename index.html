@@ -12,12 +12,12 @@
       rel="stylesheet"
       href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
-    <!--Replace with your tailwind.css once created-->
+    
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
       rel="stylesheet"
     />
-    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+   
     <style>
       .gradient {
         background: black;
@@ -199,13 +199,7 @@
               avançado, temos tudo o que você precisa para um treino eficaz e
               seguro.
               <br />
-              <!-- <br />
-
-              Images from:
-
-              <a class="text-pink-500 underline" href="https://undraw.co/"
-                >undraw.co</a
-              > -->
+             
             </p>
           </div>
           <div class="w-full sm:w-1/2 p-6">
@@ -332,11 +326,7 @@
             class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
           >
             <div class="flex items-center justify-start">
-              <!-- <button
-                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-              >
-                Action
-              </button> -->
+             
             </div>
           </div>
         </div>
@@ -362,11 +352,7 @@
             class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
           >
             <div class="flex items-center justify-center">
-              <!-- <button
-                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-              >
-                Action
-              </button> -->
+             
             </div>
           </div>
         </div>
@@ -391,11 +377,7 @@
             class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
           >
             <div class="flex items-center justify-end">
-              <!-- <button
-                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-              >
-                Action
-              </button> -->
+            
             </div>
           </div>
         </div>
@@ -526,7 +508,7 @@
         </div>
       </div>
     </section>
-    <!-- Change the colour #f8fafc to match the previous section colour -->
+    
     <svg
       class="wave-top"
       viewBox="0 0 1439 147"
@@ -591,7 +573,7 @@
               class="text-black-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
               href="#"
             >
-              <!--Icon from: http://www.potlabicons.com/ -->
+            
 
               TechFit Center
             </a>
@@ -603,9 +585,7 @@
         </div>
       </div>
     </footer>
-    <!-- jQuery if you need it
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
+  
     <script>
       var scrollpos = window.scrollY;
       var header = document.getElementById("header");
@@ -615,7 +595,7 @@
       var toToggle = document.querySelectorAll(".toggleColour");
 
       document.addEventListener("scroll", function () {
-        /*Apply classes for slide in bar*/
+       
         scrollpos = window.scrollY;
 
         if (scrollpos > 10) {
@@ -624,7 +604,7 @@
           navaction.classList.add("gradient");
           navaction.classList.remove("text-gray-800");
           navaction.classList.add("text-white");
-          //Use to switch toggleColour colours
+         
           for (var i = 0; i < toToggle.length; i++) {
             toToggle[i].classList.add("text-gray-800");
             toToggle[i].classList.remove("text-white");
@@ -638,7 +618,7 @@
           navaction.classList.add("bg-white");
           navaction.classList.remove("text-white");
           navaction.classList.add("text-gray-800");
-          //Use to switch toggleColour colours
+          
           for (var i = 0; i < toToggle.length; i++) {
             toToggle[i].classList.add("text-white");
             toToggle[i].classList.remove("text-gray-800");
@@ -651,8 +631,7 @@
       });
     </script>
     <script>
-      /*Toggle dropdown list*/
-      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+     
 
       var navMenuDiv = document.getElementById("nav-content");
       var navMenu = document.getElementById("nav-toggle");
@@ -663,16 +642,16 @@
 
         //Nav Menu
         if (!checkParent(target, navMenuDiv)) {
-          // click NOT on the menu
+   
           if (checkParent(target, navMenu)) {
-            // click on the link
+       
             if (navMenuDiv.classList.contains("hidden")) {
               navMenuDiv.classList.remove("hidden");
             } else {
               navMenuDiv.classList.add("hidden");
             }
           } else {
-            // click both outside link and outside menu, hide menu
+          
             navMenuDiv.classList.add("hidden");
           }
         }
